@@ -1,0 +1,191 @@
+---
+source: sources/wiki-Loss_function.md
+source_url: https://en.wikipedia.org/wiki/Loss_function
+chunk: 1/3
+---
+
+Mathematical relation assigning a probability event to a cost 
+
+In [mathematical optimization](./Mathematical_optimization) and [decision theory](./Decision_theory), a **loss function** or **cost function** (sometimes also called an error function)[[1]](./Loss_function#cite_note-ttf2001-1) is a function that maps an [event](./Event_(probability_theory)) or values of one or more variables onto a [real number](./Real_number) intuitively representing some "cost" associated with the event. An [optimization problem](./Optimization_problem) seeks to minimize a loss function. An **objective function** is either a loss function or its opposite (in specific domains, variously called a [reward function](./Reward_function), a [profit function](./Profit_function), a [utility function](./Utility_function), a [fitness function](./Fitness_function), etc.), in which case it is to be maximized. The loss function could include terms from several levels of the hierarchy[*[clarification needed](./Wikipedia:Please_clarify)*].
+
+ 
+
+In statistics, typically a  loss function is used for [parameter estimation](./Parameter_estimation), and the event in question is some function of the difference between estimated and true values for an instance of data. The concept, as old as [Laplace](./Pierre-Simon_Laplace), was reintroduced in statistics by [Abraham Wald](./Abraham_Wald) in the middle of the 20th century.[[2]](./Loss_function#cite_note-2)  In the context of [economics](./Economics), for example, this is usually [economic cost](./Economic_cost) or [regret](./Regret_(decision_theory)).  In [classification](./Statistical_classification), it is the penalty for an incorrect classification of an example. In [actuarial science](./Actuarial_science), it is used in an insurance context to model benefits paid over premiums, particularly since the works of [Harald Cramér](./Harald_Cramér) in the 1920s.[[3]](./Loss_function#cite_note-3) In [optimal control](./Optimal_control), the loss is the penalty for failing to achieve a desired value. In [financial risk management](./Financial_risk_management), the function is mapped to a monetary loss.
+
+ [![](//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Comparison_of_loss_functions.png/250px-Comparison_of_loss_functions.png)](./File:Comparison_of_loss_functions.png)Comparison of common loss functions ([MAE](./Mean_absolute_error), SMAE, [Huber loss](./Huber_loss), and log-cosh loss)  used for regression 
+
+## Examples
+
+ 
+
+### Regret
+
+ Main article: [Regret (decision theory)](./Regret_(decision_theory)) 
+
+[Leonard J. Savage](./Leonard_J._Savage) argued that using non-Bayesian methods such as [minimax](./Minimax), the loss function should be based on the idea of *[regret](./Regret_(decision_theory))*, i.e., the loss associated with a decision should be the difference between the consequences of the best decision that could have been made under circumstances will be known and the decision that was in fact taken before they were known.
+
+ 
+
+### Quadratic loss function
+
+ 
+
+The use of a [quadratic](./Quadratic_function) loss function is common, for example when using [least squares](./Least_squares) techniques. It is often more mathematically tractable than other loss functions because of the properties of [variances](./Variance), as well as being symmetric: an error above the target causes the same loss as the same magnitude of error below the target.  If the target is     t   {\displaystyle t}  ![{\displaystyle t}](https://wikimedia.org/api/rest_v1/media/math/render/svg/65658b7b223af9e1acc877d848888ecdb4466560), then a quadratic loss function is
+
+     λ λ  ( x ) = C ( t − −  x  )  2      {\displaystyle \lambda (x)=C(t-x)^{2}\;}  ![{\displaystyle \lambda (x)=C(t-x)^{2}\;}](https://wikimedia.org/api/rest_v1/media/math/render/svg/cf4beff1dc104f16784ac54e594efbdaa72480b6) 
+
+for some constant     C   {\displaystyle C}  ![{\displaystyle C}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4fc55753007cd3c18576f7933f6f089196732029); the value of the constant makes no difference to a decision, and can be ignored by setting it equal to 1. This is also known as the **squared error loss** (**SEL**).[[1]](./Loss_function#cite_note-ttf2001-1)
+
+ 
+
+Many common [statistics](./Statistic), including [t-tests](./T-test), [regression](./Regression_analysis) models, [design of experiments](./Design_of_experiments), and much else, use [least squares](./Least_squares) methods applied using [linear regression](./Linear_regression) theory, which is based on the quadratic loss function.
+
+ 
+
+The quadratic loss function is also used in [linear-quadratic optimal control problems](./Linear-quadratic_regulator). In these problems, even in the absence of uncertainty, it may not be possible to achieve the desired values of all target variables. Often loss is expressed as a [quadratic form](./Quadratic_form) in the deviations of the variables of interest from their desired values; this approach is [tractable](./Closed-form_expression) because it results in linear [first-order conditions](./First-order_condition). In the context of [stochastic control](./Stochastic_control), the expected value of the quadratic form is used. The quadratic loss assigns more importance to outliers than to the true data due to its square nature, so alternatives like the [Huber](./Huber_loss), log-cosh and SMAE[*[further explanation needed](./Wikipedia:Please_clarify)*] losses are used when the data has many large outliers.
+
+ [![](//upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fitting_a_straight_line_to_a_data_with_outliers.png/250px-Fitting_a_straight_line_to_a_data_with_outliers.png)](./File:Fitting_a_straight_line_to_a_data_with_outliers.png)Effect of using different loss functions, when the data has outliers 
+
+### 0-1 loss function
+
+ 
+
+In [statistics](./Statistics) and [decision theory](./Decision_theory), a frequently used loss function is the *0-1 loss function*
+
+     L (    y ^ ^     , y ) =   {    0    if   y =    y ^ ^         1    if   y ≠ ≠     y ^ ^             {\displaystyle L({\hat {y}},y)={\begin{cases}0&{\text{if }}y={\hat {y}}\\1&{\text{if }}y\neq {\hat {y}}\end{cases}}}  ![{\displaystyle L({\hat {y}},y)={\begin{cases}0&{\text{if }}y={\hat {y}}\\1&{\text{if }}y\neq {\hat {y}}\end{cases}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/e06873fae7b532dae4794f7f513c9b50b0515fe2) 
+
+In [information theory](./Information_theory), this loss function is known as [Hamming distortion](./Rate–distortion_theory#Hamming_distortion).
+
+ 
+
+## Constructing loss and objective functions
+
+ See also: [Scoring rule](./Scoring_rule) 
+
+In many applications, objective functions, including loss functions as a particular case, are determined by the problem formulation.  In other situations, the decision maker’s preference must be elicited and represented by a scalar-valued function (called also  [utility](./Utility) function) in a form  suitable for optimization — the problem that [Ragnar Frisch](./Ragnar_Frisch) has highlighted in his [Nobel Prize](./Nobel_Prize) lecture.[[4]](./Loss_function#cite_note-4)
+The existing methods for constructing objective functions are collected in the proceedings of two dedicated conferences.[[5]](./Loss_function#cite_note-TangianGruber1997-5)[[6]](./Loss_function#cite_note-TangianGruber2002-6)
+In particular, [Andranik Tangian](./Andranik_Tangian) showed that the most usable objective functions — quadratic and additive — are determined by a few [indifference](./Principle_of_indifference) points. He used this property in the models for constructing these objective functions from either [ordinal](./Ordinal_utility) or [cardinal](./Cardinal_utility) data that were elicited through computer-assisted interviews with decision makers.[[7]](./Loss_function#cite_note-Tangian2002-7)[[8]](./Loss_function#cite_note-Tangian2004additiveUtility-8) 
+Among other things, he constructed  objective functions to optimally distribute budgets for 16 Westfalian universities[[9]](./Loss_function#cite_note-Tangian2004universityBudgets-9)
+and the European subsidies for equalizing unemployment rates among 271 German regions.[[10]](./Loss_function#cite_note-Tangian2008RegionalEnemployment-10)
+
+ 
+
+## Expected loss
+
+ See also: [Empirical risk minimization](./Empirical_risk_minimization) 
+
+In some contexts, the value of the loss function itself is a random quantity because it depends on the outcome of a random variable     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab). 
+
+ 
+
+### Statistics
+
+ 
+
+Both [frequentist](./Frequentist_probability) and [Bayesian](./Bayesian_probability) statistical theory involve making a decision based on the [expected value](./Expected_value) of the loss function; however, this quantity is defined differently under the two paradigms.
+
+ 
+
+#### Frequentist expected loss
+
+ 
+
+We first define the expected loss in the frequentist context. It is obtained by taking the expected value with respect to the [probability distribution](./Probability_distribution),      P  θ θ      {\displaystyle P_{\theta }}  ![{\displaystyle P_{\theta }}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b182d5f3dbad882191525f97e9570d408a8adebe), of the observed data,     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab). This is also referred to as the **risk function**[[11]](./Loss_function#cite_note-11)[[12]](./Loss_function#cite_note-12)[[13]](./Loss_function#cite_note-13)[[14]](./Loss_function#cite_note-14) of the decision rule     δ δ    {\displaystyle \delta }  ![{\displaystyle \delta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/c5321cfa797202b3e1f8620663ff43c4660ea03a) and the parameter     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af). Here the decision rule depends on the outcome of     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab). The risk function is given by:
+
+     R ( θ θ  , δ δ  ) =  E  θ θ    ⁡ ⁡  L   (   θ θ  , δ δ  ( X )   )   =  ∫ ∫   X   L   (   θ θ  , δ δ  ( x )   )     d   P  θ θ    ( x ) .   {\displaystyle R(\theta ,\delta )=\operatorname {E} _{\theta }L{\big (}\theta ,\delta (X){\big )}=\int _{X}L{\big (}\theta ,\delta (x){\big )}\,\mathrm {d} P_{\theta }(x).}  ![{\displaystyle R(\theta ,\delta )=\operatorname {E} _{\theta }L{\big (}\theta ,\delta (X){\big )}=\int _{X}L{\big (}\theta ,\delta (x){\big )}\,\mathrm {d} P_{\theta }(x).}](https://wikimedia.org/api/rest_v1/media/math/render/svg/490551852e01dfc66a2a0dd7a55078135d00c554) 
+
+Here,     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af) is a fixed but possibly unknown state of nature,     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab) is a vector of observations stochastically drawn from a [population](./Statistical_population),      E  θ θ      {\displaystyle \operatorname {E} _{\theta }}  ![{\displaystyle \operatorname {E} _{\theta }}](https://wikimedia.org/api/rest_v1/media/math/render/svg/9956e06f5dac5bc226e3dc8faba2290036d82081) is the expectation over all population values of     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab),      d   P  θ θ      {\displaystyle \mathrm {d} P_{\theta }}  ![{\displaystyle \mathrm {d} P_{\theta }}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c1be2a8baf98f45a902d402fe6d7ed0b53cb2c4b) is a [probability measure](./Probability_measure) over the event space of     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab) (parametrized by     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af)) and the integral is evaluated over the entire [support](./Support_(measure_theory)) of     X   {\displaystyle X}  ![{\displaystyle X}](https://wikimedia.org/api/rest_v1/media/math/render/svg/68baa052181f707c662844a465bfeeb135e82bab).
+
+ 
+
+#### Bayes Risk
+
+ 
+
+In a Bayesian approach, the expectation is calculated using the [prior distribution](./Prior_distribution)      π π   ∗ ∗      {\displaystyle \pi ^{*}}  ![{\displaystyle \pi ^{*}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f44ad69ec033a9a86437b2edaf620ea0b2c3f494) of the parameter     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af):
+
+     ρ ρ  (  π π   ∗ ∗    , a ) =  ∫ ∫   Θ Θ     ∫ ∫    X    L ( θ θ  , a (   x   ) )   d  P (   x   | θ θ  )   d   π π   ∗ ∗    ( θ θ  ) =  ∫ ∫    X     ∫ ∫   Θ Θ    L ( θ θ  , a (   x   ) )   d   π π   ∗ ∗    ( θ θ  |   x   )   d  M (   x   )   {\displaystyle \rho (\pi ^{*},a)=\int _{\Theta }\int _{\mathbf {X}}L(\theta ,a({\mathbf {x}}))\,\mathrm {d} P({\mathbf {x}}\vert \theta )\,\mathrm {d} \pi ^{*}(\theta )=\int _{\mathbf {X}}\int _{\Theta }L(\theta ,a({\mathbf {x}}))\,\mathrm {d} \pi ^{*}(\theta \vert {\mathbf {x}})\,\mathrm {d} M({\mathbf {x}})}  ![{\displaystyle \rho (\pi ^{*},a)=\int _{\Theta }\int _{\mathbf {X}}L(\theta ,a({\mathbf {x}}))\,\mathrm {d} P({\mathbf {x}}\vert \theta )\,\mathrm {d} \pi ^{*}(\theta )=\int _{\mathbf {X}}\int _{\Theta }L(\theta ,a({\mathbf {x}}))\,\mathrm {d} \pi ^{*}(\theta \vert {\mathbf {x}})\,\mathrm {d} M({\mathbf {x}})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/60125739cdefb1e35d50fdb7f3223c1beefe1536) 
+
+where     M (  x  )   {\displaystyle M(\mathbf {x} )}  ![{\displaystyle M(\mathbf {x} )}](https://wikimedia.org/api/rest_v1/media/math/render/svg/aeac6ebf4e2f0ef6a47acd624ec4a6cc27a4e974) is known as the *predictive likelihood* wherein     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af) has been "integrated out,"      π π   ∗ ∗    ( θ θ   |   x  )   {\displaystyle \pi ^{*}(\theta |\mathbf {x} )}  ![{\displaystyle \pi ^{*}(\theta |\mathbf {x} )}](https://wikimedia.org/api/rest_v1/media/math/render/svg/84ec7e4e81fdf60782050a18e5a3b193088afcfc) is the posterior distribution, and the order of integration has been changed. One then should choose the action      a  ∗ ∗      {\displaystyle a^{*}}  ![{\displaystyle a^{*}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e8ebbdafec4421aba60c540bcd665fe9aaa5c51) which minimises this expected loss, which is referred to as *Bayes Risk*.  
+In the latter equation, the integrand inside      d  x   {\displaystyle \mathrm {d} x}  ![{\displaystyle \mathrm {d} x}](https://wikimedia.org/api/rest_v1/media/math/render/svg/0b637d7a6d64d797391d40ceae9e8696e5d76f15) is known as the *Posterior Risk*, and minimising it with respect to decision     a   {\displaystyle a}  ![{\displaystyle a}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc) also minimizes the overall Bayes Risk. This optimal decision,      a  ∗ ∗      {\displaystyle a^{*}}  ![{\displaystyle a^{*}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/5e8ebbdafec4421aba60c540bcd665fe9aaa5c51) is known as the *Bayes (decision) Rule* - it minimises the average loss over all possible states of nature     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af), over all possible (probability-weighted) data outcomes. One advantage of the Bayesian approach is to that one need only choose the optimal action under the actual observed data to obtain a uniformly optimal one, whereas choosing the actual frequentist optimal decision rule as a function of all possible observations, is a much more difficult problem.  Of equal importance though, the Bayes Rule reflects consideration of loss outcomes under different states of nature,     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af).
+
+ 
+
+#### Examples in statistics
+
+ 
+- For a scalar parameter     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af), a decision function whose output        θ θ  ^ ^       {\displaystyle {\hat {\theta }}}  ![{\displaystyle {\hat {\theta }}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/f0eaae56d74c5844e86caeed8ae205ff9e413bba) is an estimate of     θ θ    {\displaystyle \theta }  ![{\displaystyle \theta }](https://wikimedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af), and a quadratic loss function ([squared error loss](./Squared_error_loss))     L ( θ θ  ,    θ θ  ^ ^     ) = ( θ θ  − −     θ θ  ^ ^      )  2   ,   {\displaystyle L(\theta ,{\hat {\theta }})=(\theta -{\hat {\theta }})^{2},}  ![{\displaystyle L(\theta ,{\hat {\theta }})=(\theta -{\hat {\theta }})^{2},}](https://wikimedia.org/api/rest_v1/media/math/render/svg/124390fc1208653d027808db415897fa19d0ab33) the risk function becomes the [mean squared error](./Mean_squared_error) of the estimate,     R ( θ θ  ,    θ θ  ^ ^     ) =  E  θ θ    ⁡ ⁡   [  ( θ θ  − −     θ θ  ^ ^      )  2    ]  .   {\displaystyle R(\theta ,{\hat {\theta }})=\operatorname {E} _{\theta }\left[(\theta -{\hat {\theta }})^{2}\right].}  ![{\displaystyle R(\theta ,{\hat {\theta }})=\operatorname {E} _{\theta }\left[(\theta -{\hat {\theta }})^{2}\right].}](https://wikimedia.org/api/rest_v1/media/math/render/svg/400ef622ef0eb39af21bc6a2769de4fce6d75260)An [estimator](./Estimator) found by minimizing the [mean squared error](./Mean_squared_error) estimates the [posterior distribution](./Posterior_distribution)'s mean.
+- In [density estimation](./Density_estimation), the unknown parameter is [probability density](./Probability_density_function) itself. The loss function is typically chosen to be a [norm](./Norm_(mathematics)) in an appropriate [function space](./Function_space). For example, for [     L  2     {\displaystyle L^{2}}  ![{\displaystyle L^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ba162c66ca85776c83557af5088cc6f8584d1912) norm](./L2_norm),     L ( f ,    f ^ ^     ) = ‖ ‖  f − −     f ^ ^      ‖ ‖   2   2    ,   {\displaystyle L(f,{\hat {f}})=\|f-{\hat {f}}\|_{2}^{2}\,,}  ![{\displaystyle L(f,{\hat {f}})=\|f-{\hat {f}}\|_{2}^{2}\,,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/3d828ac49bbd66edd6b3fa372644d111608a905b) the risk function becomes the [mean integrated squared error](./Mean_integrated_squared_error)     R ( f ,    f ^ ^     ) = E ⁡ ⁡   (  ‖ ‖  f − −     f ^ ^      ‖ ‖   2    )  .    {\displaystyle R(f,{\hat {f}})=\operatorname {E} \left(\|f-{\hat {f}}\|^{2}\right).\,}  ![{\displaystyle R(f,{\hat {f}})=\operatorname {E} \left(\|f-{\hat {f}}\|^{2}\right).\,}](https://wikimedia.org/api/rest_v1/media/math/render/svg/25a899915e8dcb407c5d5c81c3b8fd4266b01f7a)
+
+ 
+
+### Economic choice under uncertainty
+
+ 
+
+In economics, decision-making under uncertainty is often modelled using the [von Neumann–Morgenstern utility function](./Von_Neumann–Morgenstern_utility_function) of the uncertain variable of interest, such as end-of-period wealth. Since the value of this variable is uncertain, so is the value of the utility function; it is the expected value of utility that is maximized.
+
+ 
+
+## Decision rules
+
+ 
+
+A [decision rule](./Decision_rule) makes a choice using an optimality criterion. Some commonly used criteria are:
+
+ 
+- **[Minimax](./Minimax)**: Choose the decision rule with the lowest worst loss — that is, minimize the worst-case (maximum possible) loss:        a r g  m i n  δ δ       max  θ θ  ∈ ∈  Θ Θ      R ( θ θ  , δ δ  ) .   {\displaystyle {\underset {\delta }{\operatorname {arg\,min} }}\ \max _{\theta \in \Theta }\ R(\theta ,\delta ).}  ![{\displaystyle {\underset {\delta }{\operatorname {arg\,min} }}\ \max _{\theta \in \Theta }\ R(\theta ,\delta ).}](https://wikimedia.org/api/rest_v1/media/math/render/svg/59ee5727407b343034d25d1c4ea33ebbf96e9923)
+- **[Invariance](./Invariant_estimator)**: Choose the decision rule which satisfies an invariance requirement.
+- Choose the decision rule with the lowest average loss (i.e., minimize the [expected value](./Expected_value) of the loss function):        a r g  m i n  δ δ     E  θ θ  ∈ ∈  Θ Θ    ⁡ ⁡  [ R ( θ θ  , δ δ  ) ] =    a r g  m i n  δ δ       ∫ ∫   θ θ  ∈ ∈  Θ Θ    R ( θ θ  , δ δ  )  p ( θ θ  )  d θ θ  .   {\displaystyle {\underset {\delta }{\operatorname {arg\,min} }}\operatorname {E} _{\theta \in \Theta }[R(\theta ,\delta )]={\underset {\delta }{\operatorname {arg\,min} }}\ \int _{\theta \in \Theta }R(\theta ,\delta )\,p(\theta )\,d\theta .}  ![{\displaystyle {\underset {\delta }{\operatorname {arg\,min} }}\operatorname {E} _{\theta \in \Theta }[R(\theta ,\delta )]={\underset {\delta }{\operatorname {arg\,min} }}\ \int _{\theta \in \Theta }R(\theta ,\delta )\,p(\theta )\,d\theta .}](https://wikimedia.org/api/rest_v1/media/math/render/svg/118ed61f14f1d53953242831140397d033eb052d)
+
+ 
+
+## Selecting a loss function
+
+ 
+
+Sound statistical practice requires selecting an estimator consistent with the actual acceptable variation experienced in the context of a particular applied problem. Thus, in the applied use of loss functions, selecting which statistical method to use to model an applied problem depends on knowing the losses that will be experienced from being wrong under the problem's particular circumstances.[[15]](./Loss_function#cite_note-15)
+
+ 
+
+A common example involves estimating "[location](./Location_parameter)". Under typical statistical assumptions, the [mean](./Mean) or average is the statistic for estimating location that minimizes the expected loss experienced under the [squared-error](./Least_squares) loss function, while the [median](./Median) is the estimator that minimizes expected loss experienced under the absolute-difference loss function. Still different estimators would be optimal under other, less common circumstances.
+
+ 
+
+In economics, when an agent is [risk neutral](./Risk_neutral), the objective function is simply expressed as the expected value of a monetary quantity, such as profit, income, or end-of-period wealth. For [risk-averse](./Risk_aversion) or [risk-loving](./Risk-loving) agents, loss is measured as the negative of a [utility function](./Utility), and the objective function to be optimized is the expected value of utility.
+
+ 
+
+Other measures of cost are possible, for example [mortality](./Mortality_rate) or [morbidity](./Morbidity) in the field of [public health](./Public_health) or [safety engineering](./Safety_engineering).
+
+ 
+
+For most [optimization algorithms](./Optimization_algorithm), it is desirable to have a loss function that is globally [continuous](./Continuous_function) and [differentiable](./Differentiable_function).
+
+ 
+
+Two very commonly used loss functions are the [squared loss](./Mean_squared_error),     L ( a ) =  a  2     {\displaystyle L(a)=a^{2}}  ![{\displaystyle L(a)=a^{2}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/63618aaa8422af5bf2aa2f5051f2ff305d9af5b1), and the [absolute loss](./Absolute_deviation),     L ( a ) =  |  a  |    {\displaystyle L(a)=|a|}  ![{\displaystyle L(a)=|a|}](https://wikimedia.org/api/rest_v1/media/math/render/svg/a49ef4dd7fa7d5804d7aca226f471e2198cab648).  However the absolute loss has the disadvantage that it is not differentiable at     a = 0   {\displaystyle a=0}  ![{\displaystyle a=0}](https://wikimedia.org/api/rest_v1/media/math/render/svg/90d476e5e765a5d77bbcff32e4584579207ec7d8).  The squared loss has the disadvantage that it has the tendency to be dominated by [outliers](./Outlier)—when summing over a set of     a   {\displaystyle a}  ![{\displaystyle a}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)'s (as in      ∑ ∑   i = 1   n   L (  a  i   )   {\textstyle \sum _{i=1}^{n}L(a_{i})}  ![{\textstyle \sum _{i=1}^{n}L(a_{i})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/9270305d9660c39f850d93ec13bff570f8903bd6)), the final sum tends to be the result of a few particularly large     a   {\displaystyle a}  ![{\displaystyle a}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)-values, rather than an expression of the average     a   {\displaystyle a}  ![{\displaystyle a}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc)-value.
+
+ 
+
+The choice of a loss function is not arbitrary. It is very restrictive and sometimes the loss function may be characterized by its desirable properties.[[16]](./Loss_function#cite_note-16) Among  the choice principles are, for example, the requirement of completeness of the class of symmetric statistics in the case of [i.i.d.](./I.i.d.) observations, the principle of complete information, and some others.
+
+ 
+
+[W. Edwards Deming](./W._Edwards_Deming) and [Nassim Nicholas Taleb](./Nassim_Nicholas_Taleb) argue that empirical reality, not nice mathematical properties, should be the sole basis for selecting loss functions, and real losses often are not mathematically nice and are not differentiable, continuous, symmetric, etc. For example, a person who arrives before a plane gate closure can still make the plane, but a person who arrives after cannot, a discontinuity and asymmetry which makes arriving slightly late much more costly than arriving slightly early. In drug dosing, the cost of too little drug may be lack of efficacy, while the cost of too much may be tolerable toxicity, another example of asymmetry. Traffic, pipes, beams, ecologies, climates, etc. may tolerate increased load or stress with little noticeable change up to a point, then become backed up or break catastrophically. These situations, Deming and Taleb argue, are common in real-life problems, perhaps more common than classical smooth, continuous, symmetric, differentials cases.[[17]](./Loss_function#cite_note-17)
+
+ 
+
+## See also
+
+ 
+- [Bayesian regret](./Bayesian_regret)
+- [Loss functions for classification](./Loss_functions_for_classification)
+- [Discounted maximum loss](./Discounted_maximum_loss)
+- [Hinge loss](./Hinge_loss)
+- [Scoring rule](./Scoring_rule)
+- [Statistical risk](./Statistical_risk)
+
+ 
+
+
