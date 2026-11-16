@@ -679,3 +679,904 @@ Typical dropout keep probability P(c) is 0.5 for hidden layers and higher (e.g.,
 - Source: entries/2026/06/21/wiki-Dropout_neural_networks.md
 - Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
 
+
+---
+
+**Generated:** 2026-11-11
+**Source:** 20 entries from /home/forge/workspace/entries/
+**Model:** openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] activation-function-computes-node-output-from-weighted-inputs
+An activation function computes a neural network node's output from its weighted inputs.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] nonsaturating-activations-mitigate-vanishing-gradient
+Nonsaturating activation functions such as ReLU are less prone to the vanishing gradient problem than saturating functions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] finite-range-activations-stable-training-infinite-range-efficient-smaller-lr
+Finite-range activations (sigmoid, tanh) yield more stable gradient-based training; infinite-range activations (ReLU) yield more efficient training but require smaller learning rates.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] relu-used-in-alexnet-and-resnet
+ReLU was used in AlexNet (2012) and ResNet (2015).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] leaky-relu-negative-slope-0-01-fixes-dying-relu
+Leaky ReLU addresses the 'dying ReLU' problem using a small negative slope of 0.01x for x<0.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] prelu-learned-negative-slope
+PReLU is like Leaky ReLU but the negative slope alpha is a learned parameter.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] elu-smooth-negative-inputs-c1-when-alpha-one
+ELU is smooth for negative inputs using alpha(e^x - 1) and is C1 when alpha=1.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] softmax-outputs-sum-to-one
+Softmax is a multi-input fold function for multiclass classification and its outputs sum to 1.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Activation_function.md
+- Source URL: https://en.wikipedia.org/wiki/Activation_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] artificial-neuron-computes-nonlinear-function-of-weighted-sum
+An artificial neuron receives signals, computes a nonlinear activation function over the weighted sum of inputs, and outputs a real number.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] weights-are-trainable-edge-parameters-minimizing-error
+Weights are parameters on edges between neurons that adjust during training to minimize error.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-networks-learn-hierarchical-representations
+Deep neural networks learn hierarchical representations, with each successive layer capturing increasingly abstract features.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-propagates-error-gradients-via-chain-rule
+Backpropagation trains multi-layer networks by propagating error gradients backward through layers using the chain rule.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] relu-introduced-by-fukushima-1969
+ReLU was introduced by Fukushima in 1969 and is the most common activation function.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] simplest-feedforward-network-equivalent-to-linear-regression
+The simplest feedforward network is equivalent to linear regression using least squares.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] self-supervised-pretraining-introduced-by-schmidhuber-1991
+Self-supervised pre-training was introduced by Schmidhuber's 'neural history compressor' in 1991.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dannet-2011-first-superhuman-cnn
+DanNet (Ciresan et al., 2011) was the first CNN to achieve superhuman visual pattern recognition performance.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Artificial_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Artificial_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] soft-attention-weights-dynamic-hard-weights-fixed
+Soft attention weights are computed dynamically during the forward pass and change with every input; hard weights are learned during backpropagation and fixed at inference.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] qkv-attention-queries-keys-values-roles
+In QKV attention, queries represent what to look for, keys represent what to match against, and values represent what to retrieve.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cross-attention-queries-from-decoder-keys-values-from-encoder
+In cross-attention, queries come from the decoder while keys and values come from the encoder.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] context-vector-weighted-sum-encoder-hidden-states
+The attention context vector c = H * w is the weighted sum of encoder hidden states.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] qkv-attention-permutation-equivariance-invariance
+QKV attention is equivariant to permutations of queries and invariant to permutations of key-value pairs.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] efficient-transformers-approximate-attention-subquadratic
+Efficient Transformer variants such as Reformer, Linformer, and Performer approximate attention with sub-quadratic complexity for long sequences.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] graph-attention-networks-extend-attention-to-graphs
+Graph Attention Networks (GAT) extend attention to non-sequential, graph-structured data.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] fast-weight-controllers-1992-anticipated-linearized-self-attention
+Fast weight controllers (Schmidhuber, 1992) anticipated modern self-attention and were later renamed 'linearized self-attention'.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Attention_machine_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Attention_(machine_learning)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] overcomplete-autoencoder-can-learn-identity-requires-regularization
+An overcomplete autoencoder with code dimension n >= input dimension m can learn the identity function, making regularization essential.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] autoencoder-standard-reconstruction-loss-is-l2-mse
+The standard autoencoder reconstruction loss is L2 mean squared error between input and reconstruction.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] k-sparse-autoencoder-zeroes-inactive-gradients
+In k-sparse autoencoders, only the top-k activations are kept and backpropagation sets gradients to zero for inactive units.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] sparse-autoencoders-can-exceed-input-width
+Sparse autoencoders may have more hidden units than inputs; sparsity rather than bottleneck width prevents trivial solutions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] autoencoder-encoder-decoder-usually-mlps
+Autoencoder encoders and decoders are usually implemented as multilayer perceptrons (MLPs).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] autoencoder-training-minimizes-expected-reconstruction-error
+Autoencoder training finds encoder and decoder parameters that minimize expected reconstruction error over the data distribution.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ideal-undercomplete-autoencoder-decoder-can-generate-from-latent-codes
+An ideal undercomplete autoencoder's decoder can generate realistic samples by feeding arbitrary latent codes.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] autoencoder-applications-include-anomaly-detection-and-word-embeddings
+Autoencoder applications include facial recognition, feature detection, anomaly detection, word embeddings, and synthetic data generation.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Autoencoder.md
+- Source URL: https://en.wikipedia.org/wiki/Autoencoder
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-computes-gradients-not-optimizer
+Backpropagation computes gradients only; it is not itself the optimizer.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Backpropagation.md
+- Source URL: https://en.wikipedia.org/wiki/Backpropagation
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-uses-recursive-delta-formula
+Backpropagation uses a recursive delta formula to propagate error signals.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Backpropagation.md
+- Source URL: https://en.wikipedia.org/wiki/Backpropagation
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-memory-cost-from-caching-activations
+Backpropagation incurs memory cost from caching activations.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Backpropagation.md
+- Source URL: https://en.wikipedia.org/wiki/Backpropagation
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-equivalent-to-reverse-mode-autodiff
+Backpropagation is equivalent to reverse-mode automatic differentiation.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Backpropagation.md
+- Source URL: https://en.wikipedia.org/wiki/Backpropagation
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backpropagation-operates-via-computational-graphs
+Backpropagation operates via computational graphs.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Backpropagation.md
+- Source URL: https://en.wikipedia.org/wiki/Backpropagation
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-epsilon-numerical-stability
+Batch normalization adds a small positive epsilon to the variance in the denominator for numerical stability.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-fully-differentiable
+The batch normalization transform is fully differentiable, enabling standard backpropagation through all parameters.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-allows-higher-learning-rates
+Batch normalization allows higher learning rates without gradient instability.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-can-initially-cause-gradient-explosion
+In very deep networks, batch normalization can initially cause gradient explosion, which is mitigated by skip connections in residual networks.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-alternatives-differ-by-statistic-dimensions
+Batch normalization is part of a normalization family including Layer Normalization, Instance Normalization, and Group Normalization, which differ in the dimensions over which statistics are computed.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] batchnorm-minibatch-noise-regularizes
+Batch normalization's use of mini-batch statistics during training introduces noise that provides a regularizing effect and reduces the need for dropout.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Batch_normalization.md
+- Source URL: https://en.wikipedia.org/wiki/Batch_normalization
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-receptive-field-grows-with-depth-and-dilation
+The receptive field grows larger in deeper CNN layers as convolutions cascade, and dilated or atrous convolutions can expand it without increasing parameters.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-max-pooling-most-common-pooling
+Max pooling takes the maximum value in each local region and is the most commonly used pooling operation.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-global-pooling-reduces-channel-to-scalar
+Global pooling acts on an entire feature map and reduces each channel to a single value.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-input-tensor-layout-bhwc
+CNN input tensor shape is (batch) x (height) x (width) x (channels).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-inspired-by-hubel-wiesel
+CNN architecture was inspired by Hubel and Wiesel's discovery of simple cells and complex cells in the visual cortex.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-first-gpu-implementation-chellapilla-2006
+The first GPU implementation of a CNN was by Chellapilla et al. in 2006.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-alexnet-2012-imagenet
+AlexNet demonstrated CNN dominance on ImageNet in 2012.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Convolutional_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Convolutional_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-automates-feature-engineering
+Deep learning replaces hand-crafted feature engineering with learned hierarchical representations.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-probabilistic-interpretation-led-dropout
+Treating activation nonlinearities as cumulative distribution functions led to the introduction of dropout as a regularizer.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-supports-three-learning-paradigms
+Deep learning is applicable to supervised, semi-supervised, and unsupervised learning, with unsupervised especially valuable because unlabeled data is more abundant.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-first-sgd-mlp-amari-1967
+The first deep multilayer perceptron trained by stochastic gradient descent was by Amari in 1967.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-term-introduced-dechter-1986
+The term 'deep learning' was introduced to machine learning by Dechter in 1986.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-vanishing-gradient-identified-hochreiter-1991
+The vanishing gradient problem was identified by Hochreiter in 1991.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] deep-learning-nuance-verifier-first-industrial-deployment
+The first major industrial deployment of deep learning was Nuance Verifier for speaker recognition in the late 1990s by SRI International.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-processed-us-checks-early-2000s
+By the early 2000s, CNNs already processed 10-20% of all US checks (LeCun).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Deep_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Deep_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-forward-process-variance-preservation
+The forward diffusion process uses coefficients sqrt(1 - beta_t) and sqrt(beta_t) to preserve unit variance across steps.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-reverse-process-predicts-mean-and-covariance
+The reverse diffusion process is parameterized by a neural network that predicts mean mu_theta(x_t, t) and covariance Sigma_theta(x_t, t) at each step.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-elbo-decomposition
+The diffusion ELBO decomposes into a reconstruction term, a prior matching term, and a sum of KL divergences between forward and reverse transition distributions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-non-equilibrium-thermodynamics-potential
+The non-equilibrium thermodynamics motivation for diffusion models treats forward diffusion as analogous to particles diffusing in a potential well V(x) = ||x||^2 / 2 toward the equilibrium Gaussian N(0, I).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-backbone-typically-unet-or-transformer
+The denoising network in diffusion models is typically a U-Net or Transformer.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-cfg-interpolates-conditional-unconditional
+Classifier-free guidance interpolates between conditional and unconditional score estimates using a guidance scale parameter.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-posterior-tractable-gaussian
+The diffusion posterior q(x_{t-1} | x_t, x_0) is tractable and Gaussian, making the KL divergence terms in the ELBO computable in closed form.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] diffusion-reverse-variance-fixed-or-learned
+The variance of the reverse diffusion process can be fixed or learned; DDPM fixes it and later work such as Improved DDPM learns it.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Diffusion_model.md
+- Source URL: https://en.wikipedia.org/wiki/Diffusion_model
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-weak-vs-strong-dilution-mean-field
+Weak dilution removes a small fraction of connections and is solvable exactly with mean field theory; strong dilution removes a large fraction and mean field theory does not apply.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-keep-probability-vs-framework-drop-rate
+Dropout keep probability P(c) is the probability of keeping a weight or neuron; PyTorch nn.Dropout(p) uses p as drop probability (1 - P(c)), while Keras Dropout(rate) uses rate as drop probability.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-zeroing-location-does-not-change-math
+Whether dropout zeroing happens at weights, node outputs, or elsewhere in the computation graph does not change the mathematical result, only implementation efficiency.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-iterative-vs-pruning-one-time
+Dilution and dropout are iterative processes where the network continues learning, unlike pruning which is a one-time removal.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-ensemble-subnetwork-interpretation
+Dropout can be viewed as training an exponential number of sub-networks simultaneously and averaging their predictions at inference.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dropout-google-patent-us9406017b2
+Google holds U.S. Patent 9,406,017 B2 on dropout.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cnn-dropout-common-in-fully-connected-layers
+Dropout is commonly applied in fully connected layers of convolutional neural networks.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Dropout_neural_networks.md
+- Source URL: https://en.wikipedia.org/wiki/Dropout_(neural_networks)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-generator-pushforward-measure
+The GAN generator maps latent variables through function G to produce synthetic samples, implemented as the pushforward measure μ_G = μ_Z ∘ G⁻¹.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-discriminator-output-range
+The GAN discriminator outputs a value in [0,1].
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-training-alternating-backpropagation
+GAN training applies independent backpropagation to both the generator and discriminator networks alternately.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-optimal-discriminator-radon-nikodym
+The optimal GAN discriminator is D*(x) = dμ_ref / d(μ_ref + μ_G), the Radon-Nikodym derivative of the reference measure with respect to the mixture.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-original-three-equilibrium-types-equal
+For the original GAN game, generator-first, discriminator-first, and Nash equilibrium types exist and are equal, but this does not hold for all GAN variants.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-generates-one-pass-vs-autoregressive
+GANs generate complete samples in one pass, whereas autoregressive models require sequential generation.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-applicable-across-learning-paradigms
+GANs are applicable across unsupervised, semi-supervised, fully supervised, and reinforcement learning paradigms.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gan-minimax-theorem-finite-strategy-limit
+The minimax theorem applies only when strategy sets are finitely spanned; GAN strategy sets are infinite, so equilibrium analysis must distinguish generator-first, discriminator-first, and Nash equilibria.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Generative_adversarial_network.md
+- Source URL: https://en.wikipedia.org/wiki/Generative_adversarial_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gradient-descent-first-order-local-minima
+Gradient descent is a first-order iterative optimization algorithm for finding local minima of differentiable multivariate functions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gradient-ascent-positive-gradient-direction
+Gradient ascent steps in the positive gradient direction to maximize a function.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] wolfe-conditions-sufficient-decrease-curvature
+Wolfe conditions consist of sufficient decrease and curvature conditions that a step size must satisfy and are found via line search.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] backtracking-line-search-economical-step-size
+Backtracking line search is an economical method for choosing learning rates with good theoretical guarantees and practical results.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gradient-descent-solves-symmetric-positive-definite-linear-system
+Gradient descent solves Ax = b by minimizing f(x) = x^T A x - 2x^T b when A is symmetric positive-definite.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] quadratic-gradient-is-2ax-minus-b
+For f(x) = x^T A x - 2x^T b, the gradient is ∇f(x) = 2(Ax - b).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] descent-direction-positive-inner-product-guarantees-decrease
+A general descent direction p_n with a positive inner product with -∇f(x_n) guarantees function decrease for sufficiently small η.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] curry-1944-first-nonlinear-convergence-study
+Curry (1944) first studied gradient descent convergence for non-linear problems.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Gradient_descent.md
+- Source URL: https://en.wikipedia.org/wiki/Gradient_descent
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-is-specialized-rnn-architecture
+LSTM is a specialized RNN architecture that uses a gated memory cell.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-cell-state-constant-error-carousel
+The LSTM cell state acts as a constant error carousel allowing gradients to flow across long sequences.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] convlstm-replaces-matrix-multiply-with-convolutions
+ConvLSTM is an LSTM variant that replaces matrix multiplication with convolutions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-training-uses-bptt-and-gradient-descent
+LSTM training uses gradient descent and backpropagation through time (BPTT).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-sequence-labeling-uses-ctc
+Connectionist temporal classification (CTC) is used with LSTM for sequence labeling.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-used-by-google-speech-recognition-2015
+LSTM was used by Google for speech recognition in 2015.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-applied-to-machine-translation-time-series-handwriting
+LSTM has been applied to machine translation, time series, and handwriting recognition.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lstm-unsupervised-training-uses-neuroevolution-policy-gradient
+Unsupervised LSTM training can use neuroevolution or policy gradient.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Long_short-term_memory.md
+- Source URL: https://en.wikipedia.org/wiki/Long_short-term_memory
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] loss-function-maps-events-to-real-cost
+A loss function maps an event or variable values onto a real number representing the cost associated with that event.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] loss-function-negation-called-reward-utility-fitness
+When the optimization objective is maximization, the function is called a reward, profit, utility, or fitness function.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] absolute-loss-robust-but-nondifferentiable-at-zero
+Absolute loss L(a)=|a| is more robust to outliers than squared loss but is not differentiable at zero.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] regret-loss-hindsight-difference
+Regret is loss defined as the difference between the best possible decision with hindsight and the actual decision taken.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bayes-risk-uses-prior-posterior-risk-decision-rule
+Bayes risk is expected loss computed using the prior distribution, and minimizing posterior risk for each observation yields the Bayes decision rule.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mise-risk-for-density-estimation-l2
+Mean integrated squared error (MISE) is the risk function for density estimation under L² norm loss.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lqr-uses-quadratic-loss-linear-conditions
+Linear-quadratic regulator (LQR) uses quadratic loss in optimal control, yielding linear first-order conditions.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] hinge-loss-used-in-svms
+Hinge loss is a classification-specific loss function used in support vector machines (SVMs).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Loss_function.md
+- Source URL: https://en.wikipedia.org/wiki/Loss_function
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] nas-search-strategy-options
+NAS search strategies include reinforcement learning, evolutionary algorithms, Bayesian optimization, gradient-based optimization, and hill climbing.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] nas-performance-estimation-avoids-full-training
+A NAS performance estimation strategy evaluates a candidate ANN from its design without fully constructing and training it.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rl-nas-zoph-le-2016-results
+RL-based NAS by Zoph & Le (2016) achieved 3.65% error on CIFAR-10 and 62.4 perplexity on Penn Treebank.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] fbnet-400x-search-speedup-over-mnasnet
+FBNet achieved a 400x search speedup over mNASNet.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] squeezenas-100x-search-speedup-over-mobilenetv3
+SqueezeNAS achieved a 100x search speedup over MobileNetV3 search.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bananas-bayesian-optimization-neural-surrogate
+BANANAS is a Bayesian optimization method for NAS that uses a neural predictor as a surrogate model approximating architecture-to-validation-error.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] nas-benchmarks-tabular-and-surrogate
+NAS benchmarks are tabular (query pre-computed performance) or surrogate (predict performance via a model), eliminating the need for GPU training during search algorithm development.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] multi-objective-nas-optimizes-accuracy-and-efficiency
+Multi-objective NAS optimizes accuracy alongside memory, model size, and inference time simultaneously.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Neural_architecture_search.md
+- Source URL: https://en.wikipedia.org/wiki/Neural_architecture_search
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rnn-core-abstraction-maps-input-hidden-to-output-updated-hidden
+An RNN is a function f_θ: (x_t, h_t) → (y_t, h_{t+1}), mapping current input and hidden state to output and updated hidden state.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gru-fewer-parameters-than-lstm
+GRU (Gated Recurrent Unit) is a computationally efficient alternative to LSTM with fewer parameters.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] unfolding-rnn-visualized-as-deep-feedforward-network
+An RNN can be unfolded in time and visualized as a deep feedforward network in which layers correspond to time steps.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] fully-recurrent-neural-network-all-outputs-connect-all-inputs
+A fully recurrent neural network (FRNN) connects all neuron outputs to all neuron inputs, making it the most general RNN topology.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] stacked-rnn-feeds-layer-output-sequence-to-layer-above
+In a stacked/deep RNN, multiple RNN layers are stacked vertically and each layer's output sequence becomes input to the layer above.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pixelrnn-diagonal-bilstm-processes-images
+PixelRNN processes 2D image data with a diagonal BiLSTM that scans grids from two corners simultaneously.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Recurrent_neural_network.md
+- Source URL: https://en.wikipedia.org/wiki/Recurrent_neural_network
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] regularized-objective-has-data-term-and-regularization-term
+The regularized objective consists of a data term (training loss/likelihood) and a regularization term (penalty/prior on model complexity).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lambda-controls-regularization-strength-tradeoff
+The hyperparameter λ controls the tradeoff between data fidelity and regularization strength; higher λ means stronger regularization and simpler models.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] l1-lasso-objective-formula
+L1/LASSO regularization minimizes (1/n)||X̂w - Ŷ||² + λ||w||₁.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ridge-adding-lambda-n-i-ensures-invertibility
+Adding λnI to XᵀX in ridge regression ensures XᵀX + λnI is invertible even when features outnumber samples.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] tikhonov-training-complexity-cubic-in-features
+Tikhonov regularization training complexity is O(d³ + nd²), dominated by matrix inversion; testing complexity is O(nd).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] l1-solutions-can-be-nonunique-when-aligned-with-l1-ball
+L1 regularization can produce non-unique solutions when the solution space aligns with the geometry of the L1 ball.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] sgd-noise-implicitly-regularizes-toward-flat-minima
+Stochastic gradient descent noise acts as an implicit regularizer that favors flatter minima, which generalize better.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Regularization_mathematics.md
+- Source URL: https://en.wikipedia.org/wiki/Regularization_(mathematics)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rl-agent-environment-loop-state-reward-action
+At each discrete time step t, the agent observes state S_t and reward R_t, selects action A_t, and the environment transitions to S_{t+1} and produces reward R_{t+1}.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] policy-maps-state-action-to-probability
+A policy π(a,s) = Pr(A_t = a | S_t = s) maps states and actions to action probabilities and can be stochastic or deterministic.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] state-value-function-expected-discounted-return
+The state-value function V_π(s) is the expected discounted return starting from state s and following policy π.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] action-value-function-expected-return-after-action
+The action-value function Q_π(s,a) is the expected discounted return starting from state s, taking action a, then following policy π.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] partial-observability-defines-pomdp
+If the agent sees only a subset or noisy observations rather than the complete state, the problem is a Partially Observable MDP (POMDP).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rl-two-sources-of-power-samples-and-function-approximation
+RL gains power from (1) using samples to optimize performance and (2) function approximation for large environments.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rl-two-main-algorithmic-approaches-value-estimation-and-policy-search
+The two main RL algorithmic approaches are value function estimation and direct policy search.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] regret-is-performance-difference-from-optimal
+Regret is the difference between the agent's performance and the optimal agent's performance.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Reinforcement_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Reinforcement_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transfer-learning-reuses-source-task-knowledge-for-target-task
+Transfer learning reuses knowledge learned from a source task to improve performance on a different but related target task.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] positive-transfer-improves-target-performance
+Positive transfer occurs when source knowledge improves target task performance, such as shared low-level visual features across image tasks.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] domain-adaptation-is-transfer-learning-subproblem
+Domain adaptation is a sub-problem of transfer learning focused on bridging distribution differences between source and target domains.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] multi-task-learning-trains-simultaneously-transfer-learning-sequential
+Multi-task learning trains on multiple tasks simultaneously, whereas transfer learning uses a pre-trained model sequentially for a target task.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] zero-shot-learning-no-target-training-examples
+Zero-shot learning is the extreme transfer-learning case where no target-task training examples are available and performance relies entirely on transferred knowledge.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transfer-learning-freeze-early-layers-retrain-later-layers
+A common transfer-learning procedure freezes early layers that capture general features, replaces or retrains later classification layers, and fine-tunes with a lower learning rate on the target dataset.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] emg-eeg-cross-domain-transfer-bidirectional
+Cross-domain transfer between EMG and EEG signals works bidirectionally due to their similar physical natures (Bird et al., 2020).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transfer-learning-algorithms-exist-for-markov-logic-and-bayesian-networks
+Transfer learning algorithms exist for Markov logic networks and Bayesian networks, not only neural networks.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transfer_learning.md
+- Source URL: https://en.wikipedia.org/wiki/Transfer_learning
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transformer-tokenization-pipeline-text-to-embedding
+The transformer tokenization pipeline maps text through pretokenization, a tokenizer with vocabulary V, integer IDs, and embedding vectors.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transformer-language-model-loss-negative-log-probability
+The transformer language-modeling loss is Loss = -Σ ln(P(t | context)) summed over predicted tokens for masked, autoregressive, and prefixLM tasks.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transformer-linear-layer-row-vector-xw
+Transformer implementations commonly use row vectors and compute a linear layer as xW (multiplying the row vector by the weight matrix on the right).
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] original-transformer-linear-warmup-first-2-percent
+The original transformer linearly scaled the learning rate from 0 to its maximum over the first ~2% of training steps, then decayed it.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] transformer-vocabulary-size-affects-token-granularity
+Vocabulary size |V| is a key hyperparameter: a smaller vocabulary yields more character-level tokens per word, while a larger vocabulary yields more whole-word tokens.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mamba-state-space-models-address-transformer-quadratic-complexity
+Mamba and other state space models (SSMs) are emerging alternatives that address the transformer's quadratic complexity.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] google-nmt-2016-used-8-layer-bidirectional-lstm-before-transformer-2020
+Google Neural Machine Translation (2016) used an 8-layer bidirectional LSTM before being partially replaced by a transformer encoder in 2020.
+- Source: /home/forge/workspace/entries/2026/06/21/wiki-Transformer_deep_learning_architecture.md
+- Source URL: https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
